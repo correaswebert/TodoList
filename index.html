@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <link rel="manifest" href="manifest.json" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="add-task-form">
+        <input type="text" id="new-task-input" />
+        <span id="clear-input">X</span>
+        <button id="add-task-button">Add</button>
+      </div>
+
+      <ul id="pending-tasks" style="margin-bottom: 0;"></ul>
+      <ul id="finished-tasks" style="margin-top: 0;"></ul>
+
+      <div class="bottom-cover">
+        <button id="clear-finished-tasks">
+          Clear Finished
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
